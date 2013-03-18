@@ -7,7 +7,7 @@ A drop in stack based dialog system for meteor apps.
 
 Copy the dialog folder to your meteor app's client folder.
 
-Add the following to the bottom of your meteor app's main <body> template section:
+Add the following to the bottom of your meteor app's main &lt;body&gt; template section:
 
     {{> dialog-modal}}
 
