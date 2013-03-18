@@ -1,0 +1,98 @@
+#dialog-modal-container {
+	background: rgba(0,0,0, 0.3);
+}
+
+#dialog-modal-container.hidden {
+	display: none;
+}
+
+#dialog-modal {
+	background: white;
+	width: 960px;
+	height: 80%;
+	position: relative;
+	top: 0;
+	left: 0;
+	box-shadow: 0 30px 80px 15px rgba(0, 0, 0, 0.5);
+	border-radius: 10px 10px 8px 8px;
+}
+
+.dialog-header {
+	padding: 0 15px;
+	border: 2px solid white;
+	border-bottom: none;
+	min-height: 24px;
+	background: #666;
+	color: #fff;
+	border-radius: 6px 6px 0 0;
+}
+
+.dialog-header h3 {
+	margin: 0;
+	font-size: 20px;
+}
+
+.dialog-top-close {
+	font-weight: bold;
+	position: absolute;
+	z-index: 1200;
+	top: 0;
+	right: 6px;
+	color: red;
+	padding-right: 0.25em;
+	font-size: 24px;
+	line-height: 24px;
+	opacity: 1;
+	text-shadow: 0 1px 1px white;
+}
+
+#dialog-wrap {
+	position: absolute;
+	top: 43px;
+	bottom: 0;
+	left: 1em;
+	right: 0;
+}
+
+#dialog-contain {
+	height: 100%;
+	margin: 0 3px 0 0;
+	overflow-y: auto;
+}
+
+#dialog-text {
+	max-height: inherit;
+	padding-top: 1em;
+	padding-right: 0.5em;
+}
+
+.auto-size #dialog-wrap {
+	position: static;
+	padding: 0.25em 0.25em 0.25em 1em;
+}
+
+#alert-text {
+	white-space: pre-wrap;
+}
+
+.fixed-container {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	overflow: hidden;
+	display: table;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1200;
+}
+
+.fixed-container .helper {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.fixed-container .helper > div {
+	margin:0 auto;
+}

@@ -1,0 +1,39 @@
+<template name="dialog-modal">
+	<div id="dialog-modal-container" class="fixed-container dialog-direct-close{{dialog_visibility}}">
+		<div class="helper dialog-direct-close">
+			<div id="dialog-modal" class="modal{{{dialog_dimensions}}}">
+				{{> dialog-modal-body}}
+			</div>
+		</div>
+	</div>
+</template>
+
+<template name="dialog-modal-body">
+	<div class="dialog-header">
+		<span class="dialog-top-close dialog-close">&times;</span>
+		<h3>{{dialog_title}}</h3>
+	</div>
+	<div id="dialog-wrap">
+		<div id="dialog-contain">
+			<div id="dialog-text">
+				{{dialog_content}}
+			</div>
+		</div>
+	</div>
+	{{#if dialog_footer}}
+		<div class="modal-footer">
+			{{{dialog_footer}}}
+			<a href="#" class="dialog-close btn btn-warning">Close</a>
+		</div>
+	{{/if}}
+</template>
+
+<template name="alert_dialog">
+	<div id="alert-text">
+{{html}}
+	</div>
+</template>
+
+<template name="default_dialog">
+	{{{html}}}
+</template>
