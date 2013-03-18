@@ -20,6 +20,19 @@
 		return false;
 	}
 
+	var escape_chars = {
+		'&': 'amp',
+		'<': 'lt',
+		'>': 'gt',
+		'"': 'quot',
+		"'": 'apos'
+	};
+	function escape_html(what) {
+		String(what).replace(/[&<>"']/g, function(v){
+			return '&' + escape_chars[v] + ';';
+		});
+    }
+
 	/**
 	 * Put up a modal dialog.
 	 *
@@ -87,7 +100,7 @@
 		}
 
 		if (options.html) content.html = options.html;
-		else if (options.text) content.html = _.escapeHTML(options.text);
+		else if (options.text) content.html = escape_html(options.text);
 
 		dialog.width = width + width_type;
 		dialog.height = height != 'auto' ? height + height_type : false;
