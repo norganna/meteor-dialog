@@ -3,14 +3,16 @@ meteor-dialog
 
 A drop in stack based dialog system for meteor apps.
 
-## Usage:
+## Installation:
 
 Copy the dialog folder to your meteor app's client folder.
 
 Add the following to the bottom of your meteor app's main &lt;body&gt; template section:
 
     {{> dialog-modal}}
-    
+
+## Usage:
+
 From within an event helper (or anywhere else in javascript land) call the `dialog_modal()` function to push your dialog onto the stack.
 
 ## Parameters:
