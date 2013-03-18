@@ -3,7 +3,7 @@ meteor-dialog
 
 A drop in stack based dialog system for meteor apps.
 
-== Usage:
+## Usage:
 
 Copy the dialog folder to your meteor app's client folder.
 
@@ -11,7 +11,7 @@ Add the following to the bottom of your meteor app's main <body> template sectio
 
     {{> dialog-modal}}
 
-== Example
+## Example
 
     <head>
       <title>TF2WH Admin</title>
