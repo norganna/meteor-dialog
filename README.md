@@ -37,7 +37,7 @@ Closes the topmost dialog from the stack.
 ## Example
 
     <head>
-      <title>TF2WH Admin</title>
+      <title>Example</title>
     </head>
     
     <body>
