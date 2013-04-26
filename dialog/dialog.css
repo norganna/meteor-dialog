@@ -30,6 +30,7 @@
 .dialog-header h3 {
 	margin: 0;
 	font-size: 20px;
+	line-height: 28px;
 }
 
 .dialog-top-close {
@@ -62,7 +63,6 @@
 
 #dialog-text {
 	max-height: inherit;
-	padding-top: 1em;
 	padding-right: 0.5em;
 }
 
